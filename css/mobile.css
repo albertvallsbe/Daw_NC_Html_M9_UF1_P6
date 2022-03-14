@@ -92,7 +92,12 @@ section ol {
 }
 
 .myClass{
+    margin: 10px;
     border: 1px solid var(--negre-sol);
+}
+
+div img {
+    flex-wrap: wrap;
 }
 .cal caption {
   border-top-left-radius: 15px;
