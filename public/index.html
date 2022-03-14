@@ -1,24 +1,27 @@
 <!-- Heu de crear la fulla d'estils de la pàgina per treure el resultat que volem. -->
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
-<title>Laboratori de disseny adaptatiu</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-	<meta charset = "UTF-8">
+	<title>Laboratori de disseny adaptatiu</title>
+	<link rel="stylesheet" href="../css/mobile.css">
+	<link rel="stylesheet" href="../css/desktop.css" media="(min-width: 900px)"/>
 	<meta name='viewport' content='width=device-width, initial-scales=1'>
+	
 </head>
 <!--  No podeu canviar res de l'HTML!!! -->
+
 <body>
-	<header>
+	<header class="capçalera">
 		<h1>Media queries i pseudoelements...</h1>
-		<nav>
-			<a href="index.html" class = "active">Inici</a>
+		<nav class="navegacio">
+			<a class="active" href="index.html" >Inici</a>
 			<a href="calendari.html">Calendari</a>
 		</nav>
 	</header>
 
 
-	<section id = "left">
+	<section id="left">
 		<h2>Jugant amb les llistes</h2>
 		<ol>
 			<li>Primer element</li>
@@ -28,16 +31,18 @@
 	</section>
 
 
-	<section id = "center">
-	<h2>Part amb el contingut central</h2>
+	<section id="center">
+		<h2>Part amb el contingut central</h2>
 		<div class="myClass">
 			<h3>Capçalera</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cupiditate ipsa expedita minima voluptate, magnam debitis nihil reprehenderit perferendis, odit doloribus aliquam impedit fugit modi quibusdam natus veritatis iusto! Iusto!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cupiditate ipsa expedita minima
+				voluptate, magnam debitis nihil reprehenderit perferendis, odit doloribus aliquam impedit fugit modi
+				quibusdam natus veritatis iusto! Iusto!</p>
 		</div>
 
 		<div>
 			<img src="https://cdn.openphoto.net/volumes/sizes/siebenschlaefer/9083/2.jpg" alt="Imatge d'un tronc">
-			
+
 			<img src="https://cdn.openphoto.net/volumes/sizes/mike/31259/2.jpg" alt="Imatge de bosc caducifoli">
 
 			<img src="https://cdn.openphoto.net/volumes/sizes/mike/5163/2.jpg" alt="Imatge de fageda primaveral">
@@ -47,8 +52,9 @@
 	</section>
 
 
-	<footer>
+	<footer class="peus">
 		<p>Exemple de codi per disseny adaptatiu.</p>
 	</footer>
 </body>
+
 </html>
