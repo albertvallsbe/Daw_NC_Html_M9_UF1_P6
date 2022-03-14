@@ -1,25 +1,47 @@
-header,
-footer,
-.navegacio,
-.peus {
-  background-color: var(--gris-mig);
-  
-}
-
-.navegacio a {
-    background-color: var(--gris-clar);
-}
-
+        header,
+        footer,
+        .navegacio,
+        .peus {
+            background-color: var(--gris-mig);
+        }
+        
+        .navegacio a {
+            background-color: var(--gris-clar);
+        }
+        /*
 section #center, section #left, section #right {
     justify-content: center;
-    flex-wrap: wrap;
+    display: inline-block;
+    /*flex-wrap: wrap;*/
+        /*
     width: 900px;
     margin: 0 auto;
-}
-.cal {
-    width: 100%;
-}
-#center{
-    font-size: 2.0rem;
-}
-
+} 
+*/
+        
+        section {
+            display: inline-block;
+            margin: 0 auto;
+            /*justify-content: center;
+        */
+            height: 400px;
+        }
+        
+        #left {
+            float: left;
+            width: 15%;
+        }
+        
+        #center {
+            width: 80%;
+            margin-left: 1%;
+            /*repasar*/
+        }
+        
+        .cal {
+            width: 100%;
+        }
+        
+        #center {
+            font-size: 2.0rem;
+        }

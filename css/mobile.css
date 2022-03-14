@@ -1,97 +1,115 @@
 :root {
-  --blau-fosc: #001e4c;
-  --blau-mig: #0066ff;
-  --blau-clar: #99c2ff;
-  --blau-lletra: #3d46c0;
-  --violeta-lletra: #511688;
-  --blanc-sol: #ffffff;
-  --gris-clar: #e1e1e5;
-  --gris-mig: #b5b5c0;
-  --gris-fosc-calendari: #666666;
-  --negre-sol: #000000;
-  --marro-calendari: #cdbb79;
-  --taronja-calendari-diumenges: #e66b44;
-  --verd-clar-fons-calendari: #b1d2d0;
-  --verd-fosc-fons-calendari: #9bb188;
+    --blau-fosc: #001e4c;
+    --blau-mig: #0066ff;
+    --blau-clar: #99c2ff;
+    --blau-lletra: #3d46c0;
+    --violeta-lletra: #511688;
+    --blanc-sol: #ffffff;
+    --gris-clar: #e1e1e5;
+    --gris-mig: #b5b5c0;
+    --gris-fosc-calendari: #666666;
+    --negre-sol: #000000;
+    --marro-calendari: #cdbb79;
+    --taronja-calendari-diumenges: #e66b44;
+    --verd-clar-fons-calendari: #b1d2d0;
+    --verd-fosc-fons-calendari: #9bb188;
 }
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 html {
-  font-size: 62.5%;
-  font-family: "DM Sans", Verdana, sans-serif;
+    font-size: 62.5%;
+    font-family: "DM Sans", Verdana, sans-serif;
 }
+
 header {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  min-width: 350px;
-  height: 150px;
-  text-align: center;
-  background-color: var(--blau-mig);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 350px;
+    height: 150px;
+    text-align: center;
+    background-color: var(--blau-mig);
 }
 
 .capçalera h1 {
-  min-height: 80px;
-  font-size: 2.4rem;
-  font-weight: bold;
-  line-height: 2.6rem;
-  padding: 15px;
-  text-align: center;
-  color: var(--blau-fosc);
+    min-height: 80px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    padding: 15px;
+    text-align: center;
+    color: var(--blau-fosc);
 }
 
 .navegacio {
-  position: relative;
-  display: flex;
-  justify-content: left;
-  width: 100%;
-  margin-bottom: 5px;
-  min-height: 50px;
-  min-width: 300px;
-  height: 30px;
-  text-align: center;
-  background-color: var(--blau-mig);
+    position: relative;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-bottom: 5px;
+    min-height: 50px;
+    min-width: 300px;
+    height: 30px;
+    text-align: center;
+    background-color: var(--blau-mig);
 }
 
 .navegacio a {
-  text-decoration: none;
-  min-width: 100px;
-  margin: 10px;
-  padding: 6px;
-  border: 0.5px solid var(--negre-sol);
-  border-radius: 10px;
-  color: var(--blau-lletra);
-  background-color: var(--blau-clar);
+    text-decoration: none;
+    min-width: 100px;
+    margin: 10px;
+    padding: 6px;
+    border: 0.5px solid var(--negre-sol);
+    border-radius: 10px;
+    color: var(--blau-lletra);
+    background-color: var(--blau-clar);
 }
 
 .navegacio .active {
-  background-color: var(--blanc-sol);
-  color: var(--violeta-lletra);
+    background-color: var(--blanc-sol);
+    color: var(--violeta-lletra);
 }
+
+
 /*main*/
 
+
+/*
 #center,
 #left,
 #right {
+  display: block;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
   height: auto;
   text-decoration: none;
   background-color: var(--gris-clar);
+}*/
+
+section {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    height: auto;
+    text-decoration: none;
+    background-color: var(--gris-clar);
 }
 
 section ol {
-  padding-left: 15px;
-  list-style-type: upper-roman;
+    padding-left: 15px;
+    list-style-type: upper-roman;
 }
 
-.myClass{
+.myClass {
     margin: 10px;
     border: 1px solid var(--negre-sol);
 }
@@ -99,68 +117,77 @@ section ol {
 div img {
     flex-wrap: wrap;
 }
-.cal caption {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  background-color: var(--gris-fosc-calendari);
-  text-transform: uppercase;
-  color: var(--blanc-sol);
-}
-#center {
-  font-size: 1.5rem;
-  
-  margin: 0 auto;
-}
-.cal {
-  border: 3px solid var(--negre-sol);
-  color: var(--blau-fosc);
-  width: 100%;
-  text-align: center;
 
+.cal caption {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: var(--gris-fosc-calendari);
+    text-transform: uppercase;
+    color: var(--blanc-sol);
 }
+
+#center {
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.cal {
+    border-spacing: 0px;
+    border: 3px solid var(--negre-sol);
+    color: var(--blau-fosc);
+    width: 100%;
+    text-align: center;
+}
+
 .cal tr {
     border: 0px;
 }
 
 .cal span {
-  font-size: 0rem;
+    font-size: 0rem;
 }
 
 .cal span :checked {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .cal .noMes {
-  background-image: url("https://openphoto.net/gallery/image/view/21390");
-  background-repeat: no-repeat;
-  background-color: var(--blau-clar);
+    background-image: url("https://openphoto.net/gallery/image/view/21390");
+    background-repeat: no-repeat;
+    background-color: var(--blau-clar);
 }
 
 .cal .weekend {
+    opacity: 0.40;
     background-color: var(--verd-clar-fons-calendari);
-   
-  }
+}
+
+tr:nth-child(even) {
+    background-color: var(--marro-calendari);
+}
+
+
 /*Footer*/
 
 footer {
-  display: flex;
-  height: 50px;
+    display: flex;
+    height: 50px;
 }
 
 .peus {
-  margin-top: 5px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  min-width: 350px;
-  height: 50px;
-  text-align: center;
-  background-color: var(--blau-mig);
+    margin-top: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 350px;
+    height: 50px;
+    text-align: center;
+    background-color: var(--blau-mig);
 }
 
 .peus p {
-  text-transform: uppercase;
-  font-size: 1.2rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
 }
